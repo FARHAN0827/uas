@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        /* Gaya umum untuk semua halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .navigation ul li {
+            display: inline;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .navigation ul li a:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+        .profile {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile h2 {
+            margin-top: 10px;
+        }
+
+        .profile p {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        /* Responsif untuk perangkat tablet */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .navigation ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile p {
+                max-width: 90%;
+            }
+        }
+
+        /* Responsif untuk perangkat mobile */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            .profile img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .profile p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di Halaman Data Pribadi</h1>
+        </div>
+    </header>
+    <main>
+        <section class="profile">
+            <img src="foto 1.jpg" alt="Foto Profil Farhan Ardiansyah Siregar" class="profile-img">
+            <h2>Farhan Ardiansyah Siregar</h2>
+            <p>Saya seorang mahasiswa di salah satu perguruan tinggi di Jawa Timur, yaitu Universitas PGRI Madiun, saat ini saya berada di semester 5.</p>
+        </section>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Halaman Utama</a></li>
+                <li><a href="about.html">Tentang Saya</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy; 2025 Farhan Ardiansyah Siregar</p>
+    </footer>
+</body>
+</html>
